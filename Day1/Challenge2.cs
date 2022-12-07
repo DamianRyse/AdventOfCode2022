@@ -1,11 +1,4 @@
-﻿using DamianRyse.AdventOfCode2022.Day1;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DamianRyse.AdventOfCode2022.Day1
+﻿namespace DamianRyse.AdventOfCode2022.Day1
 {
     internal class Challenge2
     {

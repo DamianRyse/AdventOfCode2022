@@ -1,9 +1,4 @@
-﻿using System;
-using DamianRyse.AdventOfCode2022;
-using DamianRyse.AdventOfCode2022.Day1;
-using static DamianRyse.AdventOfCode2022.Day1.Challenge1;
-
-namespace DamianRyse.AdventOfCode2022
+﻿namespace DamianRyse.AdventOfCode2022
 {
     public class AdventOfCode2022
     {

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static DamianRyse.AdventOfCode2022.Day1.Challenge1;
-
-
-namespace DamianRyse.AdventOfCode2022.Day1
+﻿namespace DamianRyse.AdventOfCode2022.Day1
 {
     internal class Challenge1
     {
