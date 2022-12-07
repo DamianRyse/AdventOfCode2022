@@ -1,4 +1,6 @@
-﻿namespace DamianRyse.AdventOfCode2022
+﻿using DamianRyse.AdventOfCode2022.Day4;
+
+namespace DamianRyse.AdventOfCode2022
 {
     public class AdventOfCode2022
     {
@@ -10,6 +12,8 @@
             StartChallenge4();
             StartChallenge5();
             // Challenge 6 started by challenge 5
+            StartChallenge7();
+            // Challenge 8 started by challenge 7
         }
 
         private static void StartChallenge1()
@@ -50,6 +54,19 @@
         private static void StartChallenge6(IEnumerable<Day3.Rucksack> challenge5Rucksacks)
         {
             var challenge = new Day3.Challenge6(challenge5Rucksacks.ToList());
+        }
+
+        private static void StartChallenge7()
+        {
+            string inputText = File.ReadAllText(Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Day4_Input.txt"));
+            var challenge = new Day4.Challenge7(inputText);
+
+            StartChallenge8(challenge.ElfPairs);
+        }
+        private static void StartChallenge8(IEnumerable<ElfPair> challenge8ElfPairs)
+        {
+            string inputText = File.ReadAllText(Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Day4_Input.txt"));
+            var challenge = new Day4.Challenge8(challenge8ElfPairs);
         }
     }
 }
