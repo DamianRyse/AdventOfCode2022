@@ -5,6 +5,8 @@
         public static void Main()
         {
             StartChallenge1();
+            StartChallenge3();
+            StartChallenge4();
         }
 
         private static void StartChallenge1()
@@ -20,6 +22,19 @@
         {
             var challenge = new Day1.Challenge2(elfes); 
             challenge.Start();
+        }
+
+        private static void StartChallenge3()
+        {
+            string inputText = File.ReadAllText(Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Day2_Input.txt"));
+            var challenge = new Day2.Challenge3(inputText);
+            
+        }
+        private static void StartChallenge4()
+        {
+            string inputText = File.ReadAllText(Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Day2_Input.txt"));
+            var challenge = new Day2.Challenge4(inputText);
+
         }
     }
 }

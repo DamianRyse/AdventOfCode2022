@@ -10,7 +10,7 @@
         public void Start()
         {
             Challenge1.Elf[] top3 = Elfes.OrderByDescending(elf => elf.SumCalories).Take(3).ToArray();
-            Console.WriteLine($"Day1/Challenge 2 => Total calories of the top 3: {top3.Sum(elf => elf.SumCalories)}");
+            Console.WriteLine($"Day 1/Challenge 2 => Total calories of the top 3: {top3.Sum(elf => elf.SumCalories)}");
         }
 
     }

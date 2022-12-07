@@ -29,7 +29,7 @@
             ElfWithMostCalores = elfes.OrderByDescending(elf=>elf.SumCalories).Take(1).First();
             AllElves = elfes.ToArray();
             
-            Console.WriteLine($"Day1/Challenge 1 => Elf {ElfWithMostCalores.ID} has the most calories: {ElfWithMostCalores.SumCalories}");
+            Console.WriteLine($"Day 1/Challenge 1 => Elf {ElfWithMostCalores.ID} has the most calories: {ElfWithMostCalores.SumCalories}");
             
         }
 
