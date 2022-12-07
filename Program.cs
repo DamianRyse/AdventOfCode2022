@@ -5,8 +5,11 @@
         public static void Main()
         {
             StartChallenge1();
+            // Challenge2 started by challenge 1
             StartChallenge3();
             StartChallenge4();
+            StartChallenge5();
+            // Challenge 6 started by challenge 5
         }
 
         private static void StartChallenge1()
@@ -35,6 +38,18 @@
             string inputText = File.ReadAllText(Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Day2_Input.txt"));
             var challenge = new Day2.Challenge4(inputText);
 
+        }
+        private static void StartChallenge5()
+        {
+            string inputText = File.ReadAllText(Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Day3_Input.txt"));
+            var challenge = new Day3.Challenge5(inputText);
+
+            StartChallenge6(challenge.Rucksacks);
+        }
+
+        private static void StartChallenge6(IEnumerable<Day3.Rucksack> challenge5Rucksacks)
+        {
+            var challenge = new Day3.Challenge6(challenge5Rucksacks.ToList());
         }
     }
 }
